@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche produit</title>
+    <link rel="stylesheet" href="../styles/style-ficheprod.css">
+    <script src="https://kit.fontawesome.com/5bab979221.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+
+<!------------ Navbar ------------->
+
+<section class="section">
+    <nav class="navbar is-fixed-top is-transparent is-spaced has-centered-logo">
+
+        <div class="navbar-brand is-hidden-desktop">
+            <a href="index.html" class="navbar-item">
+                <figure class="image navbar-logo-mobile">
+                <img src="../ressources/logo.accueil.svg" alt="">
+                </figure>
+            </a>
+
+            <a role="button" class="navbar-burger" data-target="menuContent" id="btnNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div class="navbar-menu" id="menuContent">
+            <div class="navbar-start">
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                <a href="" class="navbar-link">Accueil</a>
+                    <div class="navbar-dropdown">
+                        <a href="#produits" class="navbar-item">Nos produits</a>
+                        <a href="#apropos" class="navbar-item">À propos</a>
+                        <a href="#contact" class="navbar-item">Contact</a>
+                        <hr class="navbar-divider">
+                        <a href="" class="navbar-item">Mentions légales</a>
+                    </div>    
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                <span class="navbar-link">Stores</span>
+                    <div class="navbar-dropdown">
+                        <a href="" class="navbar-item">Nos offres</a>
+                        <a href="" class="navbar-item">Stores bannes pour terrasses</a>
+
+                            <hr class="navbar-divider">
+                                    <a href="" class="navbar-item"><i class="fa-solid fa-circle fa-2xs has-text-primary"></i>Stores bannes coffres</a>
+                                    <a href="" class="navbar-item"><i class="fa-solid fa-circle fa-2xs has-text-primary"></i>Stores bannes semi-coffres</a>
+                                    <a href="" class="navbar-item"><i class="fa-solid fa-circle fa-2xs has-text-primary"></i>Stores bannes monoblocs</a>
+                                    <a href="" class="navbar-item"><i class="fa-solid fa-circle fa-2xs has-text-primary"></i>Stores bannes classiques</a>
+                            <hr class="navbar-divider">     
+                    
+                        <a href="" class="navbar-item">Stores de jardin double pente</a>
+                        <a href="" class="navbar-item">Stores bannes pour balcons</a>
+                        <a href="" class="navbar-item">Stores de fenêtres</a>
+                           
+                    </div>
+                </div>
+
+                <div class="navbar-item">
+                    <a href="" class="navbar-item">Pergolas</a>                                   
+                </div>
+
+                <div class="navbar-item">
+                    <a href="" class="navbar-item">Carports</a>                                   
+                </div>
+            
+            </div>
+
+            <div class="navbar-brand is-hidden-touch">
+                <a href="index.html" class="navbar-item">
+                    <figure class="image navbar-logo">
+                    <img src="../ressources/logo.accueil.svg" alt="">
+                    </figure>
+                </a>
+                <a role="button" class="navbar-burger" id="btnNav">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="" class="button is-light">Contact</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</section>
+
+
+</header>
+
+<main>
+        <!-- Fiche produit -->
+    <section class="section section-produit is-flex is-align-content-center is-justify-content-center is-flex-direction-column">
+
+<!----------- Fii d'ariane ------------>       
+    <navbar class="breadcrumb is-small has-text-link has-bullet-separator">
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="is-active"><a href="">5</a></li>
+        </ul>
+    </navbar>
+
+<!------------ Produit  --------->
+
+        <div class="container product-container is-align-content-center">
+        <div class="columns">
+            <!-- Photo produit -->
+            <div class="column is-6 is-align-items-center">
+            <figure class="image is-3by2">
+                <img src="../ressources/pergolas-accueil.jpg" alt="Produit" class="product-image">
+            </figure>
+            </div>
+            <!-- Détails du produit -->
+            <div class="column is-5">
+            <h1 class="title product-name mb-4">Nom du produit</h1>
+            <p class="subtitle mb-3">Caractéristiques :</p>
+            <ul>
+                <li><span class="has-text-weight-semibold">Caractéristique 1</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ad, vel sit nobis repellendus eveniet ipsam necessitatibus perspiciatis! Iure, praesentium. </li>
+                <li><span class="has-text-weight-semibold">Caractéristique 2</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae eveniet voluptatum corporis vitae libero deleniti sint totam possimus modi.</li>
+                <li><span class="has-text-weight-semibold">Caractéristique 3</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore, natus doloribus blanditiis ut ab fugiat distinctio pariatur eveniet beatae.</li>
+            </ul>
+            <button class="button is-primary mt-4" id="quoteButton">Demander un devis</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal pour le formulaire de devis -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Demander un devis</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form>
+
+            <div class="field">
+                <div class="control">
+                <input class="input" type="text" id="product" readonly>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Nom</label>
+                <div class="control">
+                <input class="input" type="text" placeholder="Votre nom" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Numéro de téléphone</label>
+                <div class="control">
+                <input class="input" type="tel" placeholder="Votre numéro de téléphone" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Adresse email</label>
+                <div class="control">
+                <input class="input" type="email" placeholder="Votre adresse email" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                <textarea class="textarea has-fixed-size" placeholder="Votre message"></textarea>
+                </div>
+            </div>
+            
+            <div class="field is-grouped mt-4">
+                <div class="control">
+                    <button class="button is-primary mr-3">Envoyer</button> 
+                </div>
+                <div class="control">
+                    <button class="button" id="cancelButton">Annuler</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-------- Section footer -------->
+
+<footer class="footer pt-5 pb-5">
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3 has-text-centered">
+                <figure class="image">
+                    <img src="../ressources/logo.accueil.blanc.svg" alt="">
+                </figure>
+                <a class="is-size-7 has-text-white has-text-centered">© 2024 Store du Dauphiné. Tous droits réservés.</a>
+            </div>
+
+            <div class="column is-2 is-align-content-center has-text-centered">
+                <a href="" class="has-text-white has-text-centered">Mentions légales</a>
+            </div>
+
+            <div class="column is-2 is-align-content-center has-text-centered">
+                <a href="" class="has-text-white has-text-centered">Politique de confidentialité</a>
+            </div>
+
+            <div class="column is-2 is-align-content-center has-text-centered">
+                <a href="" class="has-text-white has-text-centered">CGU</a>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+<script>
+
+//--------- Menu Burger -----------//
+
+var btn = document.getElementById("btnNav")
+    var content = document.getElementById("menuContent")
+    const dropdowns = document.querySelectorAll('.navbar-item.has-dropdown');
+
+    btn.addEventListener("click", function(){
+        content.classList.toggle("is-active")
+    })
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            e.preventDefault(); 
+
+            dropdowns.forEach(item => {
+                if (item !== dropdown) {
+                    item.classList.remove('is-active');
+                }
+             });
+
+            dropdown.classList.toggle('is-active');
+        });
+    });
+
+
+// ------------ modal ------------ //
+
+    document.getElementById('quoteButton').addEventListener('click', function() {
+      document.getElementById('quoteModal').classList.add('is-active');
+    });
+
+    // Fermer le modal
+    document.querySelectorAll('.delete, #cancelButton, .modal-background').forEach(function(element) {
+      element.addEventListener('click', function() {
+        document.getElementById('quoteModal').classList.remove('is-active');
+      });
+    });
+
+// ----------- Formulaire ---------- //
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    function champProduit() {
+
+        var nomProduit = document.querySelector('.product-name').textContent;
+        
+        document.getElementById('product').value = nomProduit;
+    }
+
+    document.getElementById('quoteButton').addEventListener('click', champProduit);
+});
+
+
+</script>
+</body>
+</html>

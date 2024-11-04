@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  width: 95%;
+  z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  border-bottom: none;
+}
+
+.navbar.has-centered-logo .navbar-start,
+.navbar.has-centered-logo .navbar-end {
+  flex: 1 1 0;
+}
+
+.navbar-logo {
+  width: 250px;
+  height: auto;
+}
+
+.navbar-logo-mobile {
+  width: 200px;
+  height: auto;
+}
+
+.navbar-logo img {
+  max-height: none;
+}
+
+.navbar-logo-mobile img {
+  max-height: none;
+}
+
+.navbar-link::after {
+  border-color: black transparent transparent transparent;
+}
+
+.navbar-dropdown {
+  display: none;
+}
+
+.navbar-item.is-active .navbar-dropdown {
+  display: block;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: 10px;
+}/*# sourceMappingURL=style-navbar.css.map */

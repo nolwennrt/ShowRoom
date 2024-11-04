@@ -1,0 +1,225 @@
+$navbar-dropdown-arrow: black;
+$light : #eefcff;
+$primary : #89C2D9;
+$link : #023E8A;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../node_modules/bulma/sass";
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// ----------------- Section accueil -------------------//
+
+
+.section-accueil {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.section-accueil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 100%;
+    background-image: url(../ressources/pergolas-accueil.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+// ----------------- Navbar --------------------//
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute; 
+    top: 0;  
+    width: 95%; 
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    border-bottom: none;
+}
+
+.navbar.has-centered-logo {
+    .navbar-start,
+    .navbar-end {
+        flex:1 1 0;
+    }
+}
+
+.navbar-logo {
+    width: 250px;
+    height: auto;
+}
+
+.navbar-logo-mobile {
+    width: 200px;
+    height: auto;
+}
+
+.navbar-logo img {
+    max-height: none;
+}
+
+.navbar-logo-mobile img {
+    max-height: none;
+}
+
+.navbar-link::after{
+    border-color: black transparent transparent transparent;
+}
+
+.navbar-dropdown {
+    display: none; 
+  }
+  
+  .navbar-item.is-active .navbar-dropdown {
+    display: block; 
+  }
+
+  i {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+.title {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.subtitle {
+    position: relative;
+    right: 0;
+}
+
+// ------------------ Section produits ----------------------//
+
+
+.section-produit {
+    width: 95%;
+    min-height: 70vh;
+    background-color: $light;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+
+.card-content {
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: 20%;
+}
+
+@media screen and (min-width: 800px) {
+    .card-content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rbga(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-content {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+}
+
+.card-content p {
+    color: #333
+}
+
+
+  
+
+
+// ---------- Section A propos ------------ //
+
+
+.section-about {
+    width: 95%;
+    min-height: 70vh;
+    background-color: #89C2D9;
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.about-img img {
+    border-radius: 8px;
+}
+
+//------------- Section parallax------------//
+
+.parallax {
+    width: 95%;
+    height: 300px;
+    background: url(../ressources/pergolas-accueil.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.titleparallax {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 50px;
+}
+
+//---------- Section contact --------//
+
+.section-contact {
+    width: 95%;
+    min-height: 70vh;
+    background-color: $light;
+    border-radius: 50px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+input, textarea:focus {
+    outline-color: #90E0EF;
+}
+
+.label {
+    padding-top: 8px;
+}
+
+//----------- Footer -------------//
+
+.footer {
+    background-color: #01497C;
+    position: relative;
+    top: 25px;
+    width: 95%;
+    border-radius: 50px;
+    margin: 0 auto 30px auto;
+}
+
